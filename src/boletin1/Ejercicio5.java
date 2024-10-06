@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Ejercicio5 {
 	public static void main(String[] args) {
+		
 		//Creo las variables de los numeros introducidos por el usuario
 		double num1;
 		double num2;
