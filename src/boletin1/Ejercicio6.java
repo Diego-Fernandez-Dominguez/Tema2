@@ -5,11 +5,15 @@ import java.util.Scanner;
 public class Ejercicio6 {
 	public static void main(String[] args) {
 		//Creo las variables de los numeros introducidos por el usuario
-		double a;
-		double b;
-		double c;
-		double x;
-		double x2;
+		double numA;
+		double numB;
+		double numC;
+		
+		//Creo las variables de las posibles soluciones de la ecuacion
+		double solucion1;
+		double solucion2;
+		
+		//Creo las variable para descubrir cuantas soluciones reales tiene la ecuacion
 		double discriminante;
 		
 		//Creo el escaner para leer lineas escritas
@@ -17,20 +21,20 @@ public class Ejercicio6 {
 		
 		//Pido el numero y el usuario lo pone
 		System.out.println("Digame 'a', 'b' y 'c'");
-		a = sc.nextDouble();
-		b = sc.nextDouble();
-		c = sc.nextDouble();
+		numA = sc.nextDouble();
+		numB = sc.nextDouble();
+		numC = sc.nextDouble();
 				
 		//Calculo el discriminate, para saber cuantas soluciones reales tiene
-		discriminante = Math.pow(b, 2) - 4 * a * c;
+		discriminante = Math.pow(numB, 2) - 4 * numA * numC;
 		
 		if (discriminante == 0) { //Si el discriminante es cero, solo tiene una solucion real
-			 x = -b / (2 * a);
-	         System.out.println("x = " + x);
+			solucion1 = -numB / (2 * numA);
+	         System.out.println("x = " + solucion1);
 		} else if (discriminante > 0 ) { //Si el discriminante es mayo que cero, tiene 2 soluciones reales
-			x =  (-b + Math.sqrt(discriminante) ) / (2 * a);
-			x2 =  (-b - Math.sqrt(discriminante) ) / (2 * a);
-	        System.out.println("x = " + x + " | x2 = " + x2 );
+			solucion1 =  (-numB + Math.sqrt(discriminante) ) / (2 * numA);
+			solucion2 =  (-numB - Math.sqrt(discriminante) ) / (2 * numA);
+	        System.out.println("x = " + solucion1 + " | x2 = " + solucion2 );
 		} else { //Si no se han cumplido ninguna de las otras 2 posibilidades, significa que no tiene soluciones reales
 			System.out.println("No hay solucion real");
 		}

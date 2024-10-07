@@ -26,7 +26,7 @@ public class Ejercicio8 {
 			System.out.println("BIEN");
 		} else if (nota < 9) { //Compruebo si la nota es menor a 9, si es asi es NOTABLE
 			System.out.println("NOTABLE");
-		} else if (nota >= 9) { //Compruebo si la nota es mayor o igual a 9, si es asi es SOBRESALIENTE
+		} else { //Si no se han cumplido ninguna de las anteriores posibilidades, significa que el numero es mayor o igual que 9
 			System.out.println("SOBRESALIENTE");
 }
 		
