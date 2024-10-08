@@ -17,13 +17,13 @@ public class Ejercicio9 {
 		peticion1 = sc.nextLine();
 		peticion2 = sc.nextLine();
 		
-		if (!peticion1.equals("PIEDRA") && !peticion1.equals("PAPEL") && !peticion1.equals("TIJERA")){ //Compruebo si las peticiones del jugador 1 son validas
+		if (!peticion1.equalsIgnoreCase("PIEDRA") && !peticion1.equalsIgnoreCase("PAPEL") && !peticion1.equalsIgnoreCase("TIJERA")){ //Compruebo si las peticiones del jugador 1 son validas
 			System.out.println("La peticion del jugador 1 no es valida");
-		} else if (!peticion2.equals("PIEDRA") && !peticion2.equals("PAPEL") && !peticion2.equals("TIJERA")) //Compruebo si las peticiones del jugador 1 son validas
+		} else if (!peticion2.equalsIgnoreCase("PIEDRA") && !peticion2.equalsIgnoreCase("PAPEL") && !peticion2.equalsIgnoreCase("TIJERA")) //Compruebo si las peticiones del jugador 1 son validas
 			System.out.println("La peticion del jugador 2 no es valida");
-		else if (peticion1.equals(peticion2)) //Compruebo si las 2 peticiones son iguales
+		else if (peticion1.equalsIgnoreCase(peticion2)) //Compruebo si las 2 peticiones son iguales
 			System.out.println("Empate");
-		else if (peticion1.equals("PAPEL") && peticion2.equals("PIEDRA") || peticion1.equals("TIJERA") && peticion2.equals("PAPEL") || peticion1.equals("PIEDRA") && peticion2.equals("TIJERA")) 
+		else if (peticion1.equalsIgnoreCase("PAPEL") && peticion2.equalsIgnoreCase("PIEDRA") || peticion1.equalsIgnoreCase("TIJERA") && peticion2.equalsIgnoreCase("PAPEL") || peticion1.equalsIgnoreCase("PIEDRA") && peticion2.equalsIgnoreCase("TIJERA")) 
 			//Compruebo si el jugador 1 ha ganado
 			System.out.println("Gana el jugador 1");
 		else //Si se llega aqui significa que el jugador 2 es el que ha ganado
