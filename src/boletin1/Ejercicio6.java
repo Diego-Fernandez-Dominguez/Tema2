@@ -30,11 +30,16 @@ public class Ejercicio6 {
 		
 		if (discriminante == 0) { //Si el discriminante es cero, solo tiene una solucion real
 			solucion1 = -numB / (2 * numA);
-	         System.out.println("x = " + solucion1);
+			
+		} else if (numA == 0 ) { //Si numA es igual a 0, tiene una sola solucion, que es haciendo una ecuacion de primer grado
+			solucion1 =  (numC*-1)/numB;
+	        System.out.println("x = " + solucion1 );
+	        
 		} else if (discriminante > 0 ) { //Si el discriminante es mayo que cero, tiene 2 soluciones reales
 			solucion1 =  (-numB + Math.sqrt(discriminante) ) / (2 * numA);
 			solucion2 =  (-numB - Math.sqrt(discriminante) ) / (2 * numA);
 	        System.out.println("x = " + solucion1 + " | x2 = " + solucion2 );
+	        
 		} else { //Si no se han cumplido ninguna de las otras 2 posibilidades, significa que no tiene soluciones reales
 			System.out.println("No hay solucion real");
 		}
