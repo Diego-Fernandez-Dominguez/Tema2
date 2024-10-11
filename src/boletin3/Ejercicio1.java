@@ -5,8 +5,10 @@ import java.util.Scanner;
 public class Ejercicio1 {
 	public static void main(String[] args) {
 		
-		//
+		//Creo la variable que va a guardar el numero dado por el usuario
 		int num;
+		
+		//Creo las variables que van a guardar las cifras del numero dado por el jugador
 		int cifra1=0;
 		int cifra2=0;
 		int cifra3=0;
@@ -39,7 +41,7 @@ public class Ejercicio1 {
 				System.out.println("Su numero no es capicua");
 			}
 			
-			//Compruebo si el numero tiene 3 cifras
+		//Compruebo si el numero tiene 3 cifras
 		} else if (num < 1000) {{
 			cifra1= num /100; //Saco la primera cifra dividiendo num por 100
 			cifra3= num %10; //Saco la tercera cifra haciendo el resto de num por 10
@@ -53,12 +55,12 @@ public class Ejercicio1 {
 			
 		//Si ha llegado aqui, significa que el numero tiene 4 cifras
 		} else {
-			cifra1= num /1000;
-			cifra2= (num / 100) %10;
-			cifra3= (num / 10) %10;
-			cifra4= num %10;
+			cifra1= num /1000; //Saco la primera cifra dividiendo num por 1000
+			cifra2= (num / 100) %10; //Saco la primera cifra dividiendo num por 100 y sacandole el resto de 100
+			cifra3= (num / 10) %10; //Saco la primera cifra dividiendo num por 10 y sacandole el resto de 100
+			cifra4= num %10;//Saco la cuarta cifra haciendo el resto de num por 10
 
-			//
+			//Si cifra1 y cifra4 y  cifra2 y cifra3 son iguales significa que el numero es capicua
 			} if (cifra1==cifra4 && cifra2 == cifra3) {
 				System.out.println("Su numero es capicua");
 			} else {
