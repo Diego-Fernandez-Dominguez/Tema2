@@ -5,6 +5,10 @@ import java.util.Scanner;
 public class Ejercicio7 {
 	public static void main(String[] args) {
 		
+		/* En este programa voy a poner dos ejemplos, uno con descuento y otro sin descuento.
+		 Descuento: Para utilizar con descuento, coloca 8 dias y 801 km, el cual te dara como resultado 1401.75 
+		 Sin descuento: Para utilizar con descuento, coloca 7 dias y 800 km, el cual te dara como resultado 2000.0 */
+		
 		//Creo las variables que van a guardar los datos introducidos por el usuario
 		int dias;
 		int distancia;

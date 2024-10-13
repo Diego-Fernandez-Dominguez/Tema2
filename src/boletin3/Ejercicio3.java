@@ -5,6 +5,9 @@ import java.util.Scanner;
 public class Ejercicio3 {
 	public static void main(String[] args) {
 
+		/* Para comprobar este, puedes colocar el numero 12345678, el cual te dara de como resultado
+		 el siguiente DNI: 12345678Z */
+		
 		//Creo la variable que va a guardar el numero dado por el usuario
 		int num;
 		int modulo;
@@ -19,9 +22,10 @@ public class Ejercicio3 {
 	    System.out.print("Introduce su DNI sin poner la letras");
 	    num = sc.nextInt();
 	
-	    // r
+	    // Saco el resto del numero dado por el usuario entre 23
 	    modulo = num%23;
 	    
+	    //Con el resto, compruebo el resultado entre todas las letras para saber cual es la indicada
 	    if(num > 9999999 && num < 99999999) {
 	    letra = switch(modulo) {
 		case 0 ->{

@@ -5,6 +5,9 @@ import java.util.Scanner;
 public class Ejercicio8 {
 		public static void main(String[] args) {
 			
+			/* Para comprobar el programa tendremos que que insertar el numero 2 en el mes y el a;o 2024, nos dara como resultado que el mes tiene 29 
+			 dias, ya que es febrero y año bisisesto */
+			
 			//Creo las variables que van a guardar los datos introducidos por el usuario
 			int mes;
 			int año;

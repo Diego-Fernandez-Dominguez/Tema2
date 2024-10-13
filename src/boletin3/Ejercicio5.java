@@ -6,6 +6,9 @@ import java.util.Scanner;
 public class Ejercicio5 {
 	public static void main(String[] args) {
 	
+		/* La forma de comprobar que este codigo funciona es sumar los dos numeros correctamente, ya que si
+		 lo haces correctamente te pondra el siguiente texto: "Resultado correcto" */
+		
 		//Creo las variables que van a guardar los numeros randoms
 		int num1;
 		int num2;

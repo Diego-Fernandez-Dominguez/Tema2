@@ -5,6 +5,9 @@ import java.util.Scanner;
 public class Ejercicio4 {
 	public static void main(String[] args) {
 
+		/* Para comprobar este codigo, puedes introducir el numero 64, el cual te dara como resultado el siguiente texto :
+		  "Sesenta y cuatro" */
+		
 		//Creo la variable que va a guardar el numero dado por el usuario
 		int completo;
 		

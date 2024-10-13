@@ -5,6 +5,9 @@ import java.util.Scanner;
 public class Ejercicio6 {
 	public static void main(String[] args) {
 		
+		/* Para comprobar el funcionamiento de este programa, ponga los siguientes parametros en este orden: 1 - 59 - 59.
+		 TSi lo pones asi, el resultado que dara el programa sera el siguiente: "2 : 0 : 0" */
+		
 		//Creo las variables que van a guardar los numeros randoms
 		int horas;
 		int minutos;

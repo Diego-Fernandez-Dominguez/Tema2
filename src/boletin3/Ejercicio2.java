@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Ejercicio2 {
 	public static void main(String[] args) {
+		
+		/* Para comprobar este, puedes poner el numero -5, que te dara como resultado el numero 5 */
 
 		//Creo la variable que va a guardar el numero dado por el usuario
 		double num;
