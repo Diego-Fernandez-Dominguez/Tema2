@@ -38,9 +38,7 @@ public class Ejercicio4 {
 				mediaNega=(double) num/contNega;
 			}
 			
-
-			// Sumo los numeros
-			suma = suma + num;
+			contador++;
 
 			// Vuelvo a pedir el numero al usuario
 			System.out.println("\nIntroduzca un numero");
