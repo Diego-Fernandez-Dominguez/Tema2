@@ -6,7 +6,7 @@ public class Ejercicio2 {
 	public static void main(String[] args) {
 
 		// Creo la variable que va a guardar el numero del usuario
-		int num = 0;
+		int num;
 
 		//Creo la variable que va a guardar la cantidad de numeros introducidos
 		int contador = 0;

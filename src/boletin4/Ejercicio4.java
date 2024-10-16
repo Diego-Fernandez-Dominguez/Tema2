@@ -6,49 +6,59 @@ public class Ejercicio4 {
 	public static void main(String[] args) {
 
 		// Creo la variable que va a guardar el numero del usuario
-		int num = 0;
+		int num;
 
 		// Creo la variable que va a guardar la suma de los numeros
-		int suma = 0;
-		
-		double mediaNega=0;
+		int sumaPosi = 0;
 
-		// Creo la variable que va a guardar la cantidad de numeros introducidos
-		int contador = 0;
-		int contPosi = 0;
+		double sumaNega = 0;
+
+		// Creo la variable que va a guardar la cantidad de numeros introducidos ed cada
+		// tipo
+		int contador = 1;
 		int contNega = 0;
 		int contCero = 0;
-
 
 		// Crear un objeto Scanner para leer la entrada del usuario
 		Scanner sc = new Scanner(System.in);
 
-		// Hasta que num no sea negativo, se va a repetir este bucle
-		while (contador >10) {
-			
+		// Hasta que contador no sea igual o mayor que 10, se va a repetir este bucle
+		while (contador <= 10) {
+
+			// Le pido al usuario que introduzca un numero
 			System.out.println("Introduzca un numero");
 			num = sc.nextInt();
 
-			if (num==0 ){
-				contCero++;
-			} else if (num>=0){
-				suma=suma+num;
-			} else {
-				contNega++;
-				mediaNega=(double) num/contNega;
-			}
-			
-			contador++;
+			// Si el numero es mayor que 0, suma el numero con los anteriores positivoss
+			if (num > 0) {
+				sumaPosi = sumaPosi + num;
 
-			// Vuelvo a pedir el numero al usuario
-			System.out.println("\nIntroduzca un numero");
-			num = sc.nextInt();
+				/*
+				 * Si el numero es negativo, le suma 1 al contador de negativos y realiza la
+				 * media de estos
+				 */
+			} else if (num < 0) {
+				contNega++;
+				sumaNega = num + sumaNega;
+
+				// Si el numero es igual a 0, le suma 1 al contador de ceros
+			} else {
+				contCero++;
+
+			}
+
+			// Le sumo 1 al contador general
+			contador++;
 
 		}
 
-		// Si llega aqui, el usuario ha puesto un numero acabado. Saa la cantidad por
-		// pantalla
-		System.out.println("La media es: " + (double) suma / contador);
+		// Saco todos los resultados por pantalla
+		System.out.println("La suma de los positivos es: " + sumaPosi);
+		
+		//Compruebo si se han iontroducido negativos, si es asi hago la media
+		System.out.println(contNega == 0 ? "No se han introducido negativos" 
+				:"La media de los negativos es: " + (double) sumaNega / contNega);
+		System.out.println("Has introducido " + contCero + " cero/s");
 
 		// Cierro el escaner
 		sc.close();
