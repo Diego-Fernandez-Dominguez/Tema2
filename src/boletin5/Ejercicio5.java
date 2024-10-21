@@ -56,7 +56,7 @@ public class Ejercicio5 {
 				System.out.println("Respuesta no valida");
 			}
 
-		} while (respuesta.equalsIgnoreCase("igual") == false);
+		} while (!(respuesta.equalsIgnoreCase("igual")));
 		
 		sc.close();
 		

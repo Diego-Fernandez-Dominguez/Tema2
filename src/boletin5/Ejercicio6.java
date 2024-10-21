@@ -29,16 +29,18 @@ public class Ejercicio6 {
 			juga2 = "";
 
 			// Si lo que ha introducido el jugador 1 no es valido, se le volvera a preguntar hasta que lo ponga correctamente
-			while ((juga1.equalsIgnoreCase(PIEDRA) || juga1.equalsIgnoreCase(PAPEL) || juga1.equalsIgnoreCase(TIJERA)) == false) {
+			do {
 				System.out.println("Jugador 1, haga su jugada: ");
 				juga1 = sc.nextLine();
-			}
+			} while (!(juga1.equalsIgnoreCase(PIEDRA) || juga1.equalsIgnoreCase(PAPEL) || juga1.equalsIgnoreCase(TIJERA)));
 
 			//Si lo que ha introducido el jugador 2 no es valido, se le volvera a preguntar hasta que lo ponga correctamente
-			while ((juga2.equalsIgnoreCase(PIEDRA) || juga2.equalsIgnoreCase(PAPEL) || juga2.equalsIgnoreCase(TIJERA)) == false) {
+			do {
+				
 				System.out.println("Jugador 2, haga su jugada: ");
 				juga2 = sc.nextLine();
-			}
+		
+			} while (!(juga2.equalsIgnoreCase(PIEDRA) || juga2.equalsIgnoreCase(PAPEL) || juga2.equalsIgnoreCase(TIJERA)));
 
 			// Compruebo si las 2 peticiones son iguales
 			if (juga1.equalsIgnoreCase(juga2)) {
