@@ -4,13 +4,19 @@ import java.util.Scanner;
 
 public class Ejercicio6 {
 	public static void main(String[] args) {
-
+				
 		// Creo las variables que van a guardar las peticiones de los jugadors
 		String juga1;
 		String juga2;
-
+		
 		// Creo la variable que va a guardar si el jugador quiere voler a jugar
 		String repetir = "S";
+		
+		// Creo las constantes que van a guardar las palabras papel, tijera y piedra 
+		// para que sea mas facil su uso en los ifs
+		final String PIEDRA="PIEDRA";
+		final String PAPEL="PAPEL";
+		final String TIJERA="TIJERA";
 
 		// Creo el escaner que va a leer lo que introduzca el usuario
 		Scanner sc = new Scanner(System.in);
@@ -22,14 +28,14 @@ public class Ejercicio6 {
 			juga1 = "";
 			juga2 = "";
 
-			//Si lo que ha introducido el jugador 1 no es valido, se le volvera a preguntar hasta que lo ponga correctamente
-			while ((juga1.equalsIgnoreCase("piedra") || juga1.equalsIgnoreCase("papel") || juga1.equalsIgnoreCase("tijera")) == false) {
+			// Si lo que ha introducido el jugador 1 no es valido, se le volvera a preguntar hasta que lo ponga correctamente
+			while ((juga1.equalsIgnoreCase(PIEDRA) || juga1.equalsIgnoreCase(PAPEL) || juga1.equalsIgnoreCase(TIJERA)) == false) {
 				System.out.println("Jugador 1, haga su jugada: ");
 				juga1 = sc.nextLine();
 			}
 
 			//Si lo que ha introducido el jugador 2 no es valido, se le volvera a preguntar hasta que lo ponga correctamente
-			while ((juga2.equalsIgnoreCase("piedra") || juga2.equalsIgnoreCase("papel") || juga2.equalsIgnoreCase("tijera")) == false) {
+			while ((juga2.equalsIgnoreCase(PIEDRA) || juga2.equalsIgnoreCase(PAPEL) || juga2.equalsIgnoreCase(TIJERA)) == false) {
 				System.out.println("Jugador 2, haga su jugada: ");
 				juga2 = sc.nextLine();
 			}
@@ -39,7 +45,7 @@ public class Ejercicio6 {
 				System.out.println("Empate");
 
 				// Compruebo si el jugador 1 ha ganado
-			} else if (juga1.equalsIgnoreCase("PAPEL") && juga2.equalsIgnoreCase("PIEDRA") || juga1.equalsIgnoreCase("TIJERA") && juga2.equalsIgnoreCase("PAPEL") || juga1.equalsIgnoreCase("PIEDRA") && juga2.equalsIgnoreCase("TIJERA")) {
+			} else if (juga1.equalsIgnoreCase(PAPEL) && juga2.equalsIgnoreCase(PIEDRA) || juga1.equalsIgnoreCase(TIJERA) && juga2.equalsIgnoreCase(PAPEL) || juga1.equalsIgnoreCase(PIEDRA) && juga2.equalsIgnoreCase(TIJERA)) {
 				System.out.println("Gana el jugador 1");
 
 			// Si se llega aqui significa que el jugador 2 es el que ha ganado
