@@ -75,7 +75,7 @@ public class Ejercicio8 {
 				yield 6;
 			}
 			default -> {
-				System.out.println("Tirada 1 incorrecta");
+				System. out.println("Tirada 1 incorrecta");
 				yield -1;
 			}
 
