@@ -12,8 +12,7 @@ public class Ejercicio1v2 {
 		int segundos;
 		int incrementar;
 		int segunIncre;
-		int contMin = 0;
-		int contHora = 0;
+
 		String resultadoFinal = "";
 
 		Scanner sc = new Scanner(System.in);
@@ -37,10 +36,24 @@ public class Ejercicio1v2 {
 			System.out.println("Cuantos segundos quieres incrementar");
 			incrementar = sc.nextInt();
 		} while (incrementar < 0);
+		
+		segunIncre=segundos + incrementar;
+		minuIncre=minutos;
+		horaIncre=hora;
 
-		segunIncre = segundos + incrementar;
+		for (int i=1; segunIncre>=60; segunIncre-=60) {
+			
+			minuIncre=minutos+i;
+			
+			for (int j=1; minuIncre>=60; minuIncre-=60) {
+				
+				horaIncre=hora+j;
+				System.out.println(horaIncre);
+				for (; horaIncre>=24; horaIncre-=24) {
 
-		for (int contador = 0; contador < incrementar; contador++) {
+			}
+			}
+
 		}
 
 		resultadoFinal += (horaIncre < 10 ? "0" : "") + horaIncre + ":";
