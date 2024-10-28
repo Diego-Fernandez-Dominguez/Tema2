@@ -13,7 +13,7 @@ public class Ejercicio3 {
 		// Creo el escaner que va a permitir leer lo que pone el usuario
 		Scanner sc = new Scanner(System.in);
 
-		// Pido a usuario que introduzca la nota
+		// Pido a usuario que introduzca la 
 		System.out.println("\nDigame dos numeros");
 		num1 = sc.nextInt();
 		num2 = sc.nextInt();
