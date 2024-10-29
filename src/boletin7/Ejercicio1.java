@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class Ejercicio1 {
 	public static void main(String[] args) {
 
-		// Hijo mio, te recordaré, pero te voy a mejorar
+		// Este ejercicio no va a estar comentado debido a que el ejercicio 1v2 es una
+		// version mejorada de este
 
 		int hora;
 		int horaIncre = 0;

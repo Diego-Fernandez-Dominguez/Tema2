@@ -22,7 +22,7 @@ public class Ejercicio6 {
 			for (int espacioInter = 0; espacioInter < num - i; espacioInter++) {
 				System.out.print(" ");
 			}
-
+ 
 			// Este for va a poner los asteriscos necesarios para que se forme la piramide
 			// de forma correcta
 			for (int asteriscos = 0; asteriscos < i; asteriscos++) {

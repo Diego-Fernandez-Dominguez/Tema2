@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Ejercicio8 {
 	public static void main(String[] args) {
 		
+		// Creo la variable que va a guardar el numero del usuario
 		int num1;
 		int num2=1;
 		int contador=0;
