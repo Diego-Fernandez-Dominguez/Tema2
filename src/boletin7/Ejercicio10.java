@@ -1,12 +1,15 @@
 package boletin7;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Ejercicio10 {
 	public static void main(String[] args) {
 
+		// Ponga como numero el 12321, el resultado es que el numero si es capicua
+
 		// Creo la variable que va a guardar el numero del usuario
-		int num;
+		int num = 0;
 
 		// Creo la variable que va a ser asignada con el valor del numero del usuario
 		int numCambiado;
@@ -17,14 +20,40 @@ public class Ejercicio10 {
 		// Creo la variable que va a guardar el resto del numero
 		int resto;
 
+		// Creo una variable por si hay un error en la ejecucion
+		boolean error;
+
 		// Creo el escaner que va a permitir leer lo que ponga el usuario
 		Scanner sc = new Scanner(System.in);
 
-		// Pido un numero al usuario, si el numero es menor a 0 lo volvera a pedir
 		do {
-			System.out.println("Introduce un número: ");
-			num = sc.nextInt();
-		} while (num <= 0);
+			try {
+				// Pido un numero al usuario, si el numero es menor a 0 lo volvera a pedir
+				System.out.println("Introduce un número: ");
+				num = sc.nextInt();
+
+				// Hago un asercion de, si el numero es menor que 0, guarda el texto
+				assert num > 0 : "ERROR: El numero debe ser positivo";
+
+				// Pongo error como false
+				error = false;
+				
+				// Si el programa detecta la asercion, coge el mensaje y lo saca por pantall,
+				// limpia el bufer y pone error como true
+			} catch (AssertionError e) {
+				System.err.println(e.getMessage());
+				sc.nextLine();
+				error = true;
+
+				// Si el programa detecta que es no es un int, sacara por pantalla el error,
+				// vaciara el bufer de informacion y pone error como true
+			} catch (InputMismatchException e) {
+				System.err.println("El numero debe ser entero");
+				sc.nextLine();
+				error = true;
+			}
+
+		} while (error);
 
 		// Le asigno el valor de num a numCambiado
 		numCambiado = num;

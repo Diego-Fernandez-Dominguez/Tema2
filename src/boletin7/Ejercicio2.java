@@ -5,7 +5,10 @@ import java.util.Scanner;
 public class Ejercicio2 {
 	public static void main(String[] args) {
 
-		// Creo la variable que va a guardar el numeor introducido por el usuario
+		// Introduzca el numero 20 y el resultado sera el siguiente:
+		// - 2, 3, 5, 7, 11,13, 17,19 -
+		
+		// Creo la variable que va a guardar el numero introducido por el usuario
 		int num;
 
 		// Creo la variable que va a guardar si el numero es primo o no

@@ -5,6 +5,13 @@ import java.util.Scanner;
 public class Ejercicio5 {
 	public static void main(String[] args) {
 
+		// Coloque 5, el resultado sera el siguiente:
+		// 1
+		// 22
+		// 333
+		// 4444
+		// 55555
+
 		// Creo la variable que va a guardar el numero introducido por el usuario
 		int num = 0;
 

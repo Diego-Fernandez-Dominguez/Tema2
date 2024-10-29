@@ -5,6 +5,9 @@ import java.util.Scanner;
 public class Ejercicio4 {
 	public static void main(String[] args) {
 
+		// Introduzca los numeros 100 y 50.
+		// -El resultado sera 2 -
+		
 		// Creo las variables que van a guardar los numeros dados por el usuario
 		int num1;
 		int num2;

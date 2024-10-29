@@ -5,7 +5,11 @@ import java.util.Scanner;
 public class Ejercicio1v2 {
 	public static void main(String[] args) {
 
-		// Creo ka variabkle que van a guardar los numeros introducidos por el usuario
+		// Introduzca los siguientes valores: 13 horas, 59 minutos, 51 segundos y 10 de
+		// incremento.
+		// - El resultado debera ser 14:00:01 -
+
+		// Creo la variable que van a guardar los numeros introducidos por el usuario
 		int hora;
 		int minutos;
 		int segundos;
@@ -19,29 +23,31 @@ public class Ejercicio1v2 {
 		// Creo la variable que va a guardar el resultado final
 		String resultadoFinal = "";
 
-		// Creo el escaner que va a permitir leer lo que pone el usuario que introduzca
-		// las horas correctamente
+		// Creo el escaner que va a permitir leer lo que pone el usuario 
 		Scanner sc = new Scanner(System.in);
+		
+		// Creo el bucle que va a permitir leer lo que pone el usuario que introduzca
+		// las horas correctamente
 		do {
 			System.out.println("Dime la hora");
 			hora = sc.nextInt();
 		} while (hora < 0 || hora >= 24);
 
-		// Creo el escaner que va a permitir leer lo que pone el usuario que introduzca
+		// Creo el bucle que va a permitir leer lo que pone el usuario que introduzca
 		// los minutos correctamente
 		do {
 			System.out.println("Dime los minutos");
 			minutos = sc.nextInt();
 		} while (minutos < 0 || minutos > 60);
 
-		// Creo el escaner que va a permitir leer lo que pone el usuario que introduzca
+		// Creo el bucle que va a permitir leer lo que pone el usuario que introduzca
 		// los segundos correctamente
 		do {
 			System.out.println("Dime los segundos");
 			segundos = sc.nextInt();
 		} while (segundos < 0 || segundos > 60);
 
-		// Creo el escaner que va a permitir leer lo que pone el usuario que introduzca
+		// Creo el bucle que va a permitir leer lo que pone el usuario que introduzca
 		// el incremento correctamente
 		do {
 			System.out.println("Cuantos segundos quieres incrementar");
